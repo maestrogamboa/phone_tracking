@@ -19,7 +19,7 @@ results = geocoder.geocode(query)
 lat = results[0]['geometry']['lat']
 lng = results[0]['geometry']['lng']
 
- print(lat, lng)
+print(lat, lng)
 
 myMap = folium.Map(location=[lat, lng], zoom_start=9)
 folium.Marker([lat, lng], popup=location).add_to(myMap)
